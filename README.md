@@ -16,8 +16,8 @@
 ## ScreenShots
 
 # Password generator Screenshots
-- ![requirements](.\Assets\passwordrequirements.jpg)
-- ![createdpass](.\Assets\createdpassword.jpg)
+- ![requirements](./Assets/passwordrequirements.jpg)
+- ![createdpass](./Assets/createdpassword.jpg)
 
 
 ## Link
