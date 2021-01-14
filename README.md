@@ -15,9 +15,9 @@
 - querySelector/alert/prompt
 ## ScreenShots
 
-# Password generator
-- ![requirements](assets/passwordrequirements.jpg)
-- ![createdpass](assets/createdpassword.jpg)
+# Password generator Screenshots
+- ![requirements](Assets\passwordrequirements.jpg)
+- ![createdpass](Assets\createdpassword.jpg)
 
 
 ## Link
