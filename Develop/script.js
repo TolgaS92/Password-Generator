@@ -30,22 +30,22 @@ function generatePassword() {
         //adding Number
         var addNumbers = confirm("Include numbers ? OK: yes, Cancel: no!");
         if (addNumbers === true) {
-            userPref = [...userPref, ...numbers];
+            userPref = userPref.concat(numbers)
         }
         //adding Symbol
         var addSymbols = confirm("Include symbols ? OK: yes, Cancel: no!");
         if (addSymbols === true) {
-            userPref = [...userPref, ...symbols];
+            userPref = userPref.concat(symbols)
         }
         //adding uppercase letters
         var addUpperletters = confirm("Include upper-case letters ? OK: yes, Cancel: no!");
         if (addUpperletters === true) {
-            userPref = [...userPref, ...upperLetters];
+            userPref = userPref.concat(upperLetters)
         }
         //adding lowercase letters
         var addlowerletters = confirm("Include lower-case letters ? OK: yes, Cancel: no!");
         if (addlowerletters === true) {
-            userPref = [...userPref, ...lowerLetters];
+            userPref = userPref.concat(lowerLetters)
         }
         //Making a random password with given values..
         for (var i = 0; i < lenght; i++) {
