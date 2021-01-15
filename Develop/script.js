@@ -1,50 +1,50 @@
 //Assignment Code
-var generateBtn = document.querySelector("#generate");
+const generateBtn = document.querySelector("#generate");
 
-var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
-var symbols = ["@", "%", "#", "/", "!", "$"];
-var upperLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-var lowerLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+const numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+const symbols = ["@", "%", "#", "/", "!", "$"];
+const upperLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+const lowerLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 
-var userPref = [];
+let userPref = [];
 
 // Write password to the #password input
 function writePassword() {
-    var password = generatePassword("password");
-    var passwordText = document.querySelector("#password");
+    let password = generatePassword("password");
+    let passwordText = document.querySelector("#password");
 
     passwordText.value = password;
 
 }
 //function that generates the password with given right values
 function generatePassword() {
-    var password = " ";
+    let password = " ";
     // Setting up, length of the password for the user
     //WHEN prompted for the length of the password
     //THEN I choose a length of at least 8 characters and no more than 128 characters
-    var lenght = prompt("How many characters would you like to include to your password, between minimum 8 - maximum 128 Characters?");
+    let lenght = prompt("How many characters would you like to include to your password, between minimum 8 - maximum 128 Characters?");
     if (lenght >= 8 && lenght <= 128) {
 
 
         //adding Number
-        var addNumbers = confirm("Include numbers ? OK: yes, Cancel: no!");
-        if (addNumbers === true) {
+        let addNumbers = confirm("Include numbers ? OK: yes, Cancel: no!");
+        if (addNumbers) {
             userPref = userPref.concat(numbers)
         }
         //adding Symbol
-        var addSymbols = confirm("Include symbols ? OK: yes, Cancel: no!");
-        if (addSymbols === true) {
+        let addSymbols = confirm("Include symbols ? OK: yes, Cancel: no!");
+        if (addSymbols) {
             userPref = userPref.concat(symbols)
         }
         //adding uppercase letters
-        var addUpperletters = confirm("Include upper-case letters ? OK: yes, Cancel: no!");
-        if (addUpperletters === true) {
+        let addUpperletters = confirm("Include upper-case letters ? OK: yes, Cancel: no!");
+        if (addUpperletters) {
             userPref = userPref.concat(upperLetters)
         }
         //adding lowercase letters
-        var addlowerletters = confirm("Include lower-case letters ? OK: yes, Cancel: no!");
-        if (addlowerletters === true) {
+        let addlowerletters = confirm("Include lower-case letters ? OK: yes, Cancel: no!");
+        if (addlowerletters) {
             userPref = userPref.concat(lowerLetters)
         }
         //Making a random password with given values..
